@@ -8,11 +8,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /**Componnets angular material */
 import { MatToolbarModule} from '@angular/material/toolbar';
-import { MatIconModule } from '@angular/material/icon'
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button'
+/**components */
+import { PokemonComponent } from './components/pokemon/pokemon.component';
+import { HomeComponent } from './components/home/home.component'
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PokemonComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -20,7 +26,8 @@ import { MatIconModule } from '@angular/material/icon'
     HttpClientModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatIconModule
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
