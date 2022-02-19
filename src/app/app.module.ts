@@ -9,7 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 /**Componnets angular material */
 import { MatToolbarModule} from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
-import { MatButtonModule } from '@angular/material/button'
+import { MatButtonModule } from '@angular/material/button';
+import { MaterialModule } from './material.module';
 /**components */
 import { PokemonComponent } from './components/pokemon/pokemon.component';
 import { HomeComponent } from './components/home/home.component'
@@ -27,7 +28,8 @@ import { HomeComponent } from './components/home/home.component'
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
